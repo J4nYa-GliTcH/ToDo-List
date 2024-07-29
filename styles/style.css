@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(#143677, #4e085f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 700px;
+  height: auto;
+  border: 5px solid black;
+  background-color: white;
+  border-radius: 50px;
+}
+.header {
+  padding-left: 85px;
+}
+.addTask {
+  margin-left: 7px;
+  width: 98%;
+  height: 40px;
+  display: flex;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+input {
+  margin: 5px;
+  padding-left: 30px;
+  font-size: 22px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+}
+button {
+  margin: 5px;
+  width: 100px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: red;
+  font-size: 22px;
+  border-radius: 20px;
+}
+.tasks {
+  font-size: 20px;
+}
+ul {
+  list-style-type: none;
+}

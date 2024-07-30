@@ -58,13 +58,14 @@ main {
 .todoList p {
   border-bottom: 1px solid black;
   display: flex;
+  cursor: default;
 }
 .todoList p::before {
   content: "";
   height: 26px;
   width: 26px;
   border-radius: 50%;
-  background-image: url(../images/unchecked.png);
+  background-image: url(../images/radio_button_unchecked_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png);
   background-size: cover;
   background-position: center;
   margin-top: 9px;
@@ -88,4 +89,21 @@ span:hover {
 .checked {
   color: gray;
   text-decoration: line-through;
+}
+.checked::before {
+  background-image: url(../images/radio_button_checked_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png);
+  background-size: cover;
+  height: 26px;
+  width: 26px;
+  border-bottom: 1px solid black;
+  display: flex;
+  cursor: default;
+}
+.deleteBtn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  color: red;
+  z-index: 10; /* Ensure it's clickable */
 }
